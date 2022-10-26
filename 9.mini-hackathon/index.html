@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Guess the Pokemon</title>
+</head>
+<body>
+
+    <main class="main"><!--main container, can use flex if needed-->
+        <section class="header"> <!-- header container-->
+            <div class="header__background"> <!-- this holds the header opacity -->
+            </div>
+            <img class ="header__title" alt="gotta catch 'em all" src="./assets/gotta-catch-em-all.png">
+            <h2 class="header__subtitle">Name that pokemon!</h2>
+            <img class="header__pokeball" alt="pokeball" src="./assets/pokeball.png">
+        </section>
+
+    <section class="content">
+            <section class="card"><!--for card container-->
+                <div class="card__information"><!--for information container-->
+                    <div class="card__pokemon"><!--pokemon img container-->
+                    </div>
+                </div>
+                <div class="card__bottom">
+                    <!-- <img class="card__team-rocket" alt="team rocket cheering with meowth" src="./assets/team-rocket.png">
+                    <img class="card__gif" href="" /> -->
+                </div>
+            </section>
+
+
+            <section class="form"><!--form starts here-->
+                <label for="name" class="form__header">Enter your answer here!</label>
+                <input type="text" name="name" class="form__guess" id="comment" ></input>
+                <button type="button" class="form__submit">Submit</button> <!--big submit button-->
+                <button type="button" class="form__skip">Skip</button> <!--big submit button-->
+            </section>
+    </section>
+
+        <footer class="footer">
+            <iframe class="footer__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/377399561&color=%23a62493&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script-giphy.js"></script>
+
+</body>
+</html>

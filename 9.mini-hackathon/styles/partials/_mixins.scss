@@ -1,0 +1,28 @@
+@use './breakpoints' as *;
+
+/* matches mock up exactly at 488px, however
+will scale nicely to any size within the
+tablet px range */
+@mixin mobile {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+/* matches mock up exactly at 1056px, however
+will scale nicely to any size within the
+tablet px range */
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+/* matches mock up exactly at 1447px, however
+will scale nicely to any size within the
+tablet px range */
+  @mixin desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }

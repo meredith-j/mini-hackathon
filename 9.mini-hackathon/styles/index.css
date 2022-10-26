@@ -1,0 +1,262 @@
+/* matches mock up exactly at 488px, however
+will scale nicely to any size within the
+tablet px range */
+/* matches mock up exactly at 1056px, however
+will scale nicely to any size within the
+tablet px range */
+/* matches mock up exactly at 1447px, however
+will scale nicely to any size within the
+tablet px range */
+body {
+  font-family: "Avenir";
+  margin: 0;
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  padding: 10% 7%;
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    padding: 3rem 0 0 3rem;
+  }
+}
+
+.header {
+  position: auto;
+  background-color: #7ac5e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 1rem 0;
+  margin: 0 0 3rem 0;
+  /*    @include tablet {
+      margin: auto;
+      position: absolute;
+      left: 15%;
+      width: 50%;
+      height: 45%;
+      display: flex;
+      padding: 2rem 0 2rem 0;
+      }
+      */
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    margin: auto;
+    position: absolute;
+    left: 65rem;
+    width: 45rem;
+    height: 23rem;
+    display: flex;
+    padding: 2rem 0 2rem 0;
+  }
+}
+.header__background {
+  opacity: 50%;
+}
+.header__title {
+  width: 30rem;
+}
+@media screen and (min-width: 1280px) {
+  .header__title {
+    width: 40rem;
+  }
+}
+.header__subtitle {
+  padding: 0 0 2% 0;
+}
+.header__pokeball {
+  width: 7rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    margin: 5rem 0 0 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 0 0 0;
+  }
+}
+
+.card {
+  background-image: url(../assets/empty-card.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 1.5rem;
+  margin: 0 1rem 0 0;
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    background-size: contain;
+    width: 30rem;
+    height: 40rem;
+    margin: 0 1rem 3.8rem 0;
+    padding: 17% 0 0 0;
+  }
+}
+.card__pokemon {
+  width: 13rem;
+  height: 9rem;
+  background-color: white;
+  margin: 3rem 0 0 2rem;
+}
+@media screen and (min-width: 1280px) {
+  .card__pokemon {
+    width: 21.5rem;
+    height: 16rem;
+    background-color: white;
+    margin: -14.5rem 0 0 3.5rem;
+  }
+}
+.card__js-photo {
+  width: 13rem;
+  height: 9rem;
+}
+@media screen and (min-width: 1280px) {
+  .card__js-photo {
+    width: 20rem;
+    height: auto;
+    margin: -1rem 0 0 0;
+  }
+}
+.card__js-name {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+.card__team-rocket {
+  width: 2rem;
+  margin: auto;
+}
+.card__gif {
+  width: 10rem;
+  z-index: 5;
+  margin: 5rem 0 0 4rem;
+}
+@media screen and (min-width: 1280px) {
+  .card__gif {
+    width: 20rem;
+    z-index: 5;
+    margin: 9rem 0 0 4rem;
+  }
+}
+
+.form {
+  background-color: #034c01;
+  width: 15rem;
+  height: 25rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+}
+@media screen and (min-width: 1280px) {
+  .form {
+    width: 25rem;
+    height: 22.5rem;
+    margin: 15rem 0 0 0;
+  }
+}
+.form__header {
+  font-size: 2rem;
+  color: white;
+  padding: 0 0 1.5rem 0;
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+}
+.form__guess {
+  width: 80%;
+  padding: 1rem 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+}
+.form__submit {
+  font-size: 2rem;
+  background-color: #f44647;
+  border-radius: 1.5rem;
+  border: none;
+  margin: 2rem 0 0 0;
+  padding: 1rem 3rem;
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+}
+@media screen and (min-width: 1280px) {
+  .form__submit {
+    margin: 2rem 0 0 0;
+    padding: 1rem 7rem;
+  }
+}
+.form__skip {
+  font-size: 2rem;
+  background-color: #ffca05;
+  border-radius: 1.5rem;
+  border: none;
+  margin: 1rem 0 0 0;
+  padding: 1rem 4rem;
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+}
+@media screen and (min-width: 1280px) {
+  .form__skip {
+    margin: 1rem 0 0 0;
+    padding: 1rem 8rem;
+  }
+}
+
+#comment:focus {
+  outline-color: #7ac5e3;
+}
+
+.footer {
+  cursor: url("../assets/pokeball-cursor.png"), auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -8rem 0 0 0;
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 10rem 0 0;
+  }
+}
+.footer__iframe {
+  cursor: url("../assets/pokeball-cursor.png"), auto !important;
+}
+@media screen and (min-width: 1280px) {
+  .footer__iframe {
+    position: absolute;
+    width: 35rem;
+    height: 10rem;
+    bottom: 2rem;
+    cursor: url("../assets/pokeball-cursor.png"), auto;
+  }
+}/*# sourceMappingURL=index.css.map */
